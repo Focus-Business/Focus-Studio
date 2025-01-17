@@ -29,7 +29,9 @@
 
     <!--Google Webfonts-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+
 </head>
 <body>
 
@@ -73,34 +75,35 @@
 
                     <aside>
 
-                        <!--Social Icons in Header-->
+                       <!-- Social Icons in Header -->
                         <ul class="social-icons">
                             <li>
                                 <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
-                                    <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+                                    <i class="fab fa-facebook"></i><span class="sr-only">Facebook</span>
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" title="Google+" href="http://google.com/+username">
-                                    <i class="fa fa-google-plus fa-1x"></i><span>Google+</span>
+                                <a target="_blank" title="Google" href="https://plus.google.com/+username">
+                                    <i class="fab fa-google-plus-g"></i><span class="sr-only">Google+</span>
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" title="Twitter" href="http://www.twitter.com/username">
-                                    <i class="fa fa-twitter fa-1x"></i><span>Twitter</span>
+                                <a target="_blank" title="Twitter" href="https://www.twitter.com/username">
+                                    <i class="fab fa-twitter"></i><span class="sr-only">Twitter</span>
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
-                                    <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+                                <a target="_blank" title="Instagram" href="https://www.instagram.com/username">
+                                    <i class="fab fa-instagram"></i><span class="sr-only">Instagram</span>
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" title="behance" href="http://www.behance.net">
-                                    <i class="fa fa-behance fa-1x"></i><span>Behance</span>
+                                <a target="_blank" title="Behance" href="https://www.behance.net">
+                                    <i class="fab fa-behance"></i><span class="sr-only">Behance</span>
                                 </a>
                             </li>
                         </ul>
+
                         <!--End of Social Icons in Header-->
 
                     </aside>
@@ -143,8 +146,8 @@
             <div class="col-38">
         
                 <div class="section-heading">
-                    <h1>MOMENTE FÜR DIE EWIGKEIT</h1>
-                    <h2>Ich bin Vu Tran, Fotograf mit dem Blick für das Besondere. Ob der Zauber eines Lächelns, die Magie eines Hochzeitstages oder die Einzigartigkeit deines Projekts – ich fange die Augenblicke ein, die wirklich zählen. Lass uns gemeinsam Erinnerungen schaffen, die ein Leben lang halten!</h2>
+                    <h1 class="text-shadow">MOMENTE FÜR DIE EWIGKEIT</h1>
+                    <h2 class="text-shadow"> <b>Ich bin Vu Tran, Fotograf mit dem Blick für das Besondere. Ob der Zauber eines Lächelns, die Magie eines Hochzeitstages oder die Einzigartigkeit deines Projekts – ich fange die Augenblicke ein, die wirklich zählen. Lass uns gemeinsam Erinnerungen schaffen, die ein Leben lang halten! </b></h2>
                 </div>
             
                 <!--Call to Action-->
@@ -152,6 +155,22 @@
                 <!--End Call to Action-->
             
             </div>
+            <style>
+                .text-shadow {
+                    color: #000000; /* Schwarzer Text */
+                    text-shadow:
+                        0 0 2px rgba(255, 255, 255, 0.9),
+                        0 0 4px rgba(255, 255, 255, 0.8),
+                        0 0 6px rgba(255, 255, 255, 0.7),
+                        0 0 8px rgba(255, 255, 255, 0.6),
+                        0 0 10px rgba(255, 255, 255, 0.5),
+                        0 0 12px rgba(255, 255, 255, 0.4),
+                        0 0 14px rgba(255, 255, 255, 0.3);
+                }
+
+
+
+            </style>
             
         
         </div><!--End of Row-->
@@ -438,10 +457,12 @@
 
     <!-- Hauptbereich mit drei Sektionen -->
     <div class="footer-main">
+        
         <!-- Bereich 1: Nützliche Links -->
         <div class="footer-section links-section">
             <h3>Nützliche Links</h3>
             <ul>
+                
                 <li><a href="/datenschutz/">Datenschutz</a></li>
                 <li><a href="/impressum/">Impressum</a></li>
             </ul>
