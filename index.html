@@ -159,11 +159,25 @@
             </div>
             
             
-            <img src="../images/banner-images/IMG_1639.JPG" id="banner-logo" alt="Landing Page"/>
+            <img src="../images/banner-images/IMG_1639.JPG" id="banner_creator" alt="Landing Page"/>
         </div><!--End of Row-->
         
 
         <style>
+            /* Standardanzeige des Bildes */
+#banner_creator {
+    display: block; /* oder inline-block, je nach Bedarf */
+    max-width: 100%;
+    height: auto;
+}
+
+/* Bild ausblenden ab einer bestimmten Bildschirmbreite */
+@media (min-width: 768px) { /* Passe die Breite nach Bedarf an */
+    #banner_creator {
+        display: none;
+    }
+}
+
             /* Banner Background and Text Colors */
 /* Standard-Stile für #banner */
 #banner {
