@@ -137,7 +137,7 @@
         <!--Banner Content-->
         <div id="banner-content" class="row clearfix">
 
-            <div class="col-38">
+            <div class="col-2">
         
                 <div class="section-heading">
                     <h1 class="text-shadow">MOMENTE FÜR DIE EWIGKEIT</h1>
@@ -147,11 +147,16 @@
                 <!--Call to Action-->
                 <a href="#kontakt" class="button">MOMENTE FESTHALTEN</a>
                 <!--End Call to Action-->
+
+                
             
+            </div>
+            <div class="col-2">  
+                <img src="../images/banner-images/IMG_1639.JPG" id="" alt="Landing Page"/>
             </div>
             
             
-            <img src="../images/banner-images/IMG_1639.JPG" id="banner_creator" alt="Landing Page"/>
+         
         </div><!--End of Row-->
         
 
@@ -164,7 +169,7 @@
 }
 
 /* Bild ausblenden ab einer bestimmten Bildschirmbreite */
-@media (min-width: 1600px) { /* Passe die Breite nach Bedarf an */
+@media (min-width: 770px) { /* Passe die Breite nach Bedarf an */
     #banner_creator {
         display: none;
     }
@@ -172,24 +177,15 @@
 
             /* Banner Background and Text Colors */
 /* Standard-Stile für #banner */
-#banner {
-    position: relative;
-    background: url("../images/banner-images/IMG_16391.png") no-repeat center top;
 
-    height: auto; /* Beispielhöhe */
-    width: auto;
-    margin-right: 10%;
-}
 
 /* Medienabfrage für Bildschirme mit einer maximalen Breite von 768px */
-@media (max-width: 1600px) {
+@media (max-width: 770px) {
 
     #banner {
         background: none;
         height: auto;
-        margin: 60px;
     }
-
 
 }
 

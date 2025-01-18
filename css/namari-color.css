@@ -116,28 +116,6 @@ a:hover, #header.nav-solid nav a:hover {
 }
 
 
-/*------------------------------------------------------------------------------------------*/
-/* 4. Banner */
-/*------------------------------------------------------------------------------------------*/
-
-
-/* Banner Background and Text Colors */
-/* Standard-Stile für #banner */
-#banner {
-    position: relative;
-    background: url("../images/banner-images/IMG_16391.png") no-repeat center top;
-    background-size: cover;
-    height: 700px;
-}
-
-/* Medienabfrage für Bildschirme mit einer maximalen Breite von 768px */
-@media (max-width: 768px) {
-    #banner {
-        background-position: left top; /* Hintergrundbild nach links oben verschieben */
-        background-size: 150%; /* Optional: Hintergrundbildgröße anpassen */
-    }
-}
-
 
 
 
