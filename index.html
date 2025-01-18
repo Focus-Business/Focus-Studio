@@ -54,7 +54,7 @@
 
 <div id="wrapper">
 
-    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+    <header id="banner" class="scrollto clearfix head_padding " data-enllax-ratio=".5">
         <div id="header" class="nav-collapse">
             <div class="row clearfix">
                 <div class="col-1">
@@ -73,20 +73,34 @@
                     </div>
                     <!--End of Logo-->
 
-                    <aside>       
-
-                       <!-- Social Icons in Header -->
+                    <aside>
+                        <!-- Social Icons in Header -->
                         <ul class="social-icons">
-                            <li>
-                                <a target="_blank" title="Instagram" href="https://www.instagram.com/username">
-                                    <i class="fab fa-instagram"></i><span class="sr-only">Instagram</span>
-                                </a>
-                            </li>
+                          <li>
+                            <a class="instagram-link" target="_blank" title="Instagram" href="https://www.instagram.com/username">
+                              <i class="fab fa-instagram fa-2x"></i>
+                              <span>Instagram</span>
+                            </a>
+                          </li>
                         </ul>
-
                         <!--End of Social Icons in Header-->
+                      </aside>
+                      
 
-                    </aside>
+                      <style>
+                        /* Beispiel CSS */
+                        .instagram-link i {
+                            position: relative;
+                            top: -14px;          /* Icon leicht nach oben verschieben */
+                            margin-right: 5px;  /* Abstand zum Text */
+                            }
+
+
+                        .instagram-link span {
+                        vertical-align: middle; /* Richtet den Text aus */
+                        }
+                      </style>
+                      
 
                     <!--Main Navigation-->
                     <nav id="nav-main">
@@ -118,6 +132,8 @@
             </div>
         </div><!--End of Header-->
 
+
+</style>
         <!--Banner Content-->
         <div id="banner-content" class="row clearfix">
 
@@ -148,7 +164,7 @@
 }
 
 /* Bild ausblenden ab einer bestimmten Bildschirmbreite */
-@media (min-width: 768px) { /* Passe die Breite nach Bedarf an */
+@media (min-width: 1100px) { /* Passe die Breite nach Bedarf an */
     #banner_creator {
         display: none;
     }
@@ -159,20 +175,18 @@
 #banner {
     position: relative;
     background: url("../images/banner-images/IMG_16391.png") no-repeat center top;
-    background-size: cover;
-    height: 700px; /* Beispielhöhe */
+
+    height: auto; /* Beispielhöhe */
+    width: auto;
+    margin-right: 100px;
 }
 
 /* Medienabfrage für Bildschirme mit einer maximalen Breite von 768px */
-@media (max-width: 768px) {
-    /* 
-       Anstatt das Bild verkleinert als Hintergrund anzuzeigen,
-       entfernen wir den Hintergrund und fügen es als eigenes Element 
-       (Pseudo-Element) unterhalb des Textes ein.
-    */
+@media (max-width: 1100px) {
+
     #banner {
         background: none;
-        height: auto; /* Höhe automatisch anpassen */
+        height: auto; 
     }
 
 
@@ -390,7 +404,7 @@
         <ul class="social-icons">
             <li>
                 <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
-                    <i class="fab fa-instagram"></i><span class="sr-only">Instagram</span> <!-- Größer machen -->
+                    <i class="fab fa-instagram fa-2x"></i><span class="sr-only">Instagram</span> <!-- Größer machen -->
                 </a>
             </li>
         </ul>
