@@ -2384,10 +2384,10 @@ blockquote {
     /* Einzelne Footer-Sektionen */
     .footer-section {
         flex: 1 1 500px; /* Flex-grow: 1, Flex-shrink: 1, Flex-basis: 300px */
-        background-color: #fff;
+        background-color: #bebebe;
         padding: 20px;
         border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
         text-align: center; /* Optional: Zentriert den Inhalt */
         max-width: 500px; /* Maximale Breite begrenzen */
     }
@@ -2416,7 +2416,7 @@ blockquote {
 
     .links-section ul li a {
         text-decoration: none;
-        color: #747474;
+        color: #000000;
         transition: color 0.3s;
         font-size: 1rem; /* Link-Größe */
     }
@@ -2427,7 +2427,7 @@ blockquote {
 
     /* Info-Feld */
     .info-section p {
-        color: #666;
+        color: #000000;
         line-height: 1.6;
         font-size: 1rem; /* Text-Größe */
     }
@@ -2458,7 +2458,7 @@ blockquote {
 
     .form-section label {
         margin-bottom: 5px;
-        color: #666;
+        color: #000000;
         font-size: 0.95rem; /* Label-Größe */
         text-align: left; /* Labels linksbündig ausrichten */
         width: 100%;
@@ -2483,7 +2483,7 @@ blockquote {
     /* Neue Regel für <p>-Elemente im Footer */
     #landing-footer p {
         font-size: 1rem; /* Basisgröße */
-        color: #666;
+        color: #000000;
         line-height: 1.8;
         margin: 10px 0;
     }
@@ -2493,7 +2493,8 @@ blockquote {
         text-align: center;
         margin-top: 30px;
         font-size: 0.9rem; /* Footer-Bottom Text-Größe */
-        color: #666;
+        color: #000000;
+        
     }
 
     /* Responsive Design */
@@ -2501,10 +2502,12 @@ blockquote {
         .footer-main {
             flex-direction: column;
             align-items: center;
+            background-color: #e3e3e3;
         }
 
         .footer-section {
             max-width: 100%;
+            
         }
 
         .social-icons li a {
@@ -2515,12 +2518,13 @@ blockquote {
         .links-section,
         .info-section,
         .form-section {
-            width: 100%;
+            width: 90%;
         }
 
         .footer-section {
             flex: 1 1 100%;
             max-width: none;
+           
         }
 
         .form-section input[type="email"],
@@ -2542,6 +2546,7 @@ blockquote {
         .footer-main .footer-section {
             flex: 0 0 30%; /* Drei gleich breite Sektionen */
             max-width: 30%;
+            background-color: #e3e3e3;
         }
 
         /* Verkleinere die Gap, um die Abstände zu reduzieren */
