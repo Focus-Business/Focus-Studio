@@ -74,32 +74,31 @@
                     <!--End of Logo-->
 
                     <aside>
+                            <li class="vertical-center">
+                                <a >
+                                    Folge mir
+                                </a>
+                            </li>
+
+                            <style>
+
+                            .top-align {
+                                display: flex;
+                                justify-content: center; 
+                                align-items: flex-start;  
+
+                            }
+
+                            </style>
+
+          
 
                        <!-- Social Icons in Header -->
                         <ul class="social-icons">
-                            <li>
-                                <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
-                                    <i class="fab fa-facebook"></i><span class="sr-only">Facebook</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" title="Google" href="https://plus.google.com/+username">
-                                    <i class="fab fa-google-plus-g"></i><span class="sr-only">Google+</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" title="Twitter" href="https://www.twitter.com/username">
-                                    <i class="fab fa-twitter"></i><span class="sr-only">Twitter</span>
-                                </a>
-                            </li>
+
                             <li>
                                 <a target="_blank" title="Instagram" href="https://www.instagram.com/username">
                                     <i class="fab fa-instagram"></i><span class="sr-only">Instagram</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" title="Behance" href="https://www.behance.net">
-                                    <i class="fab fa-behance"></i><span class="sr-only">Behance</span>
                                 </a>
                             </li>
                         </ul>
@@ -118,16 +117,17 @@
                                 <a href="#about">About</a>
                             </li>
                             <li>
-                                <a href="#gallery">Gallery</a>
+                                <a href="#Hochzeit">Hochzeit</a>
                             </li>
                             <li>
-                                <a href="#services">Services</a>
+                                <a href="#Portrait">Portrait</a>
                             </li>
+                            <li>
+                                <a href="#cats_and_dogs">Cats & Dogs</a>
+                            </li>
+                            
                             <li>
                                 <a href="#testimonials">Testimonials</a>
-                            </li>
-                            <li>
-                                <a href="#pricing">Pricing</a>
                             </li>
                         </ul>
                     </nav>
@@ -140,40 +140,110 @@
             </div>
         </div><!--End of Header-->
 
-        <!--Banner Content-->
-        <div id="banner-content" class="row clearfix">
-
-            <div class="col-38">
-        
-                <div class="section-heading">
-                    <h1 class="text-shadow">MOMENTE FÜR DIE EWIGKEIT</h1>
-                    <h2 class="text-shadow"> <b>Ich bin Vu Tran, Fotograf mit dem Blick für das Besondere. Ob der Zauber eines Lächelns, die Magie eines Hochzeitstages oder die Einzigartigkeit deines Projekts – ich fange die Augenblicke ein, die wirklich zählen. Lass uns gemeinsam Erinnerungen schaffen, die ein Leben lang halten! </b></h2>
-                </div>
-            
-                <!--Call to Action-->
-                <a href="#kontakt" class="button">MOMENTE FESTHALTEN</a>
-                <!--End Call to Action-->
-            
-            </div>
-            <style>
-                .text-shadow {
-                    color: #000000; /* Schwarzer Text */
-                    text-shadow:
-                        0 0 2px rgba(255, 255, 255, 0.9),
-                        0 0 4px rgba(255, 255, 255, 0.8),
-                        0 0 6px rgba(255, 255, 255, 0.7),
-                        0 0 8px rgba(255, 255, 255, 0.6),
-                        0 0 10px rgba(255, 255, 255, 0.5),
-                        0 0 12px rgba(255, 255, 255, 0.4),
-                        0 0 14px rgba(255, 255, 255, 0.3);
-                }
+<!--Banner Content-->
+<div id="banner-content" class="row clearfix">
+    <div class="col-38">
+        <div class="section-heading">
+            <h1 class="text-shadow">MOMENTE FÜR DIE EWIGKEIT</h1>
+            <h2 class="text-shadow">
+                <b>
+                    Ich bin Vu Tran, Fotograf mit dem Blick für das Besondere. Ob der Zauber 
+                    eines Lächelns, die Magie eines Hochzeitstages oder die Einzigartigkeit 
+                    deines Projekts – ich fange die Augenblicke ein, die wirklich zählen. 
+                    Lass uns gemeinsam Erinnerungen schaffen, die ein Leben lang halten!
+                </b>
+            </h2>
+        </div>
+        <!--Call to Action-->
+        <a href="#kontakt" class="button">MOMENTE FESTHALTEN</a>
+        <!--End Call to Action-->
+    </div>
+</div>
+<!--End of Row-->
 
 
+        <style>
+            /* Banner Background and Text Colors */
+/* Standard-Stile für #banner */
+#banner {
+    position: relative;
+    background: url("../images/banner-images/IMG_16391.png") no-repeat center top;
+    background-size: cover;
+    height: 700px; /* Beispielhöhe */
+}
 
-            </style>
-            
-        
-        </div><!--End of Row-->
+/* Medienabfrage für Bildschirme mit einer maximalen Breite von 768px */
+@media (max-width: 768px) {
+    /* 
+       Anstatt das Bild verkleinert als Hintergrund anzuzeigen,
+       entfernen wir den Hintergrund und fügen es als eigenes Element 
+       (Pseudo-Element) unterhalb des Textes ein.
+    */
+    #banner {
+        background: none;
+        height: auto; /* Höhe automatisch anpassen */
+    }
+
+    /* Pseudo-Element, das das Bild unten einfügt */
+    #banner::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 400px; /* Passe die Höhe nach Bedarf an */
+        margin-top: 20px; /* Kleiner Abstand zum Inhalt */
+        background: url("../images/banner-images/IMG_1639.jpg") no-repeat center top;
+        background-size: cover;
+    }
+}
+
+/* -------------------------
+   Banner Content
+   ------------------------- */
+
+#banner-content {
+    /* Falls du möchtest, dass der Inhalt oben bleibt und nicht
+       von der Pseudo-Element-Höhe beeinflusst wird, 
+       kannst du hier bei Bedarf weitere Styles hinzufügen. */
+}
+
+.row.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-38 {
+    /* Beispiel-Layout: Die Breite oder andere Einstellungen kannst du hier anpassen */
+    width: 100%;
+    max-width: 600px; /* Nur ein Beispielwert */
+    margin: 0 auto;   /* Zentriert falls gewünscht */
+}
+
+/* Überschriften und Text im Banner */
+.section-heading h1,
+.section-heading h2 {
+    margin: 0 0 20px 0;
+}
+
+/* Beispiel-Text-Schatten */
+.text-shadow {
+    color: #000000; /* Schwarzer Text */
+    text-shadow:
+        0 0 2px rgba(255, 255, 255, 0.9),
+        0 0 4px rgba(255, 255, 255, 0.8),
+        0 0 6px rgba(255, 255, 255, 0.7),
+        0 0 8px rgba(255, 255, 255, 0.6),
+        0 0 10px rgba(255, 255, 255, 0.5),
+        0 0 12px rgba(255, 255, 255, 0.4),
+        0 0 14px rgba(255, 255, 255, 0.3);
+}
+
+
+.button:hover {
+    background-color: #555;
+}
+
+        </style>
         
     </header>
 
@@ -258,63 +328,80 @@
 
 
         </section>
-        <!--End of Introduction-->
-
 
         <!--Gallery-->
-        <aside id="gallery" class="row text-center scrollto clearfix" data-featherlight-gallery
+        <div class="text-center">
+            <h3>Hochzeit</h3>
+           </div>
+        <aside id="Hochzeit" class="row text-center scrollto clearfix" data-featherlight-gallery
                  data-featherlight-filter="a">
 
                 <a href="images/gallery-images/gallery-image-1.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                   data-wow-delay="0.1s"><img src="images/gallery-images/gallery-image-1.jpg" alt="Landing Page"/></a>
+                   data-wow-delay="0.0s"><img src="images/gallery-images/gallery-image-1.jpg" alt="Landing Page"/></a>
                 <a href="images/gallery-images/gallery-image-2.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                   data-wow-delay="0.3s"><img src="images/gallery-images/gallery-image-2.jpg" alt="Landing Page"/></a>
+                   data-wow-delay="0.0s"><img src="images/gallery-images/gallery-image-2.jpg" alt="Landing Page"/></a>
                 <a href="images/gallery-images/gallery-image-3.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                   data-wow-delay="0.5s"><img src="images/gallery-images/gallery-image-3.jpg" alt="Landing Page"/></a>
+                   data-wow-delay="0.0s"><img src="images/gallery-images/gallery-image-3.jpg" alt="Landing Page"/></a>
                 <a href="images/gallery-images/gallery-image-4.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                   data-wow-delay="0.6s"><img src="images/gallery-images/gallery-image-4.jpg" alt="Landing Page"/></a>
+                   data-wow-delay="0.0s"><img src="images/gallery-images/gallery-image-4.jpg" alt="Landing Page"/></a>
                 <a href="images/gallery-images/gallery-image-5.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                   data-wow-delay="0.8s"><img src="images/gallery-images/gallery-image-5.jpg" alt="Landing Page"/></a>
+                   data-wow-delay="0.0s"><img src="images/gallery-images/gallery-image-5.jpg" alt="Landing Page"/></a>
                 <a href="images/gallery-images/gallery-image-6.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                   data-wow-delay="1.0s"><img src="images/gallery-images/gallery-image-6.jpg" alt="Landing Page"/></a>
+                   data-wow-delay="0.0s"><img src="images/gallery-images/gallery-image-6.jpg" alt="Landing Page"/></a>
 
         </aside>
+
         <!--End of Gallery-->
+        <div class="text-center">
+            <h3>Portrait</h3>
+           </div>
+                <!--Gallery-->
+                <aside id="Portrait" class="row text-center scrollto clearfix" data-featherlight-gallery
+                data-featherlight-filter="a">
 
+               <a href="images/gallery-images/gallery-image-1.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                  data-wow-delay="0.0s"><img src="images/gallery-images/gallery-image-1.jpg" alt="Landing Page"/></a>
+               <a href="images/gallery-images/gallery-image-2.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                  data-wow-delay="0.0s"><img src="images/gallery-images/gallery-image-2.jpg" alt="Landing Page"/></a>
+               <a href="images/gallery-images/gallery-image-3.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                  data-wow-delay="0.0s"><img src="images/gallery-images/gallery-image-3.jpg" alt="Landing Page"/></a>
+               <a href="images/gallery-images/gallery-image-4.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                  data-wow-delay="0.0s"><img src="images/gallery-images/gallery-image-4.jpg" alt="Landing Page"/></a>
+               <a href="images/gallery-images/gallery-image-5.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                  data-wow-delay="0.0s"><img src="images/gallery-images/gallery-image-5.jpg" alt="Landing Page"/></a>
+               <a href="images/gallery-images/gallery-image-6.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                  data-wow-delay="0.0s"><img src="images/gallery-images/gallery-image-6.jpg" alt="Landing Page"/></a>
 
-<!--Content Section-->
-<div id="services" class="scrollto clearfix">
+       </aside>
+       <!--End of Gallery-->
+       <div class="text-center">
+        <h3>Cats & Dogs</h3>
+       </div>
+       
 
-    <div class="row no-padding-bottom clearfix">
+               <!--Gallery-->
+               <aside id="cats_and_dogs"class="row text-center scrollto clearfix" data-featherlight-gallery
+               data-featherlight-filter="a">
 
+              <a href="images/gallery-images/gallery-image-1.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                 data-wow-delay="0.0s"><img src="images/gallery-images/gallery-image-1.jpg" alt="Landing Page"/></a>
+              <a href="images/gallery-images/gallery-image-2.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                 data-wow-delay="0.0s"><img src="images/gallery-images/gallery-image-2.jpg" alt="Landing Page"/></a>
+              <a href="images/gallery-images/gallery-image-3.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                 data-wow-delay="0.0s"><img src="images/gallery-images/gallery-image-3.jpg" alt="Landing Page"/></a>
+              <a href="images/gallery-images/gallery-image-4.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                 data-wow-delay="0.0s"><img src="images/gallery-images/gallery-image-4.jpg" alt="Landing Page"/></a>
+              <a href="images/gallery-images/gallery-image-5.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                 data-wow-delay="0.0s"><img src="images/gallery-images/gallery-image-5.jpg" alt="Landing Page"/></a>
+              <a href="images/gallery-images/gallery-image-6.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                 data-wow-delay="0.0s"><img src="images/gallery-images/gallery-image-6.jpg" alt="Landing Page"/></a>
 
-        <!--Content of the Right Side-->
-        <div class="col-2">
-            <div class="section-heading">
-                <h3>FOTOGRAFIE</h3>
-                <h2 class="section-title">Fokus Auf Das, Was Wirklich Zählt</h2>
-                <p class="section-subtitle">Ich halte deine besonderen Augenblicke fest – authentisch, kreativ und mit einem Blick fürs Detail. Jeder Moment erzählt eine Geschichte.</p>
-            </div>
-            <p>Ob es ein einmaliger Moment wie eine Hochzeit ist, ein Porträt, das deine Persönlichkeit zeigt, oder Bilder, die dein Unternehmen repräsentieren – ich sorge dafür, dass jedes Bild einzigartig wird.</p>
-            <p>
-                Meine Leidenschaft ist es, Emotionen und Geschichten durch Bilder lebendig zu machen. Lass uns gemeinsam
-                deine schönsten Momente in unvergesslichen Fotografien verewigen.
-            </p>
-            <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
-            <a href="#" data-videoid="UYJ5IjBRlW8" data-videosite="youtube" class="button video link-lightbox">
-                SIEH DIR MEINE ARBEIT AN <i class="fa fa-play" aria-hidden="true"></i>
-            </a>
-        </div>
-        <!--End Content Right Side-->
+      </aside>
+      <!--End of Gallery-->
 
-        <div style="text-align: center;">
-            <img src="images/dancer.jpg" alt="Fotograf bei der Arbeit" style="height: 600px; width: auto;"/>
-        </div>
         
 
-    </div>
 
-</div>
 <!--End of Content Section-->
 
 
@@ -359,81 +446,7 @@
 
 
 
-        <!--Pricing Tables-->
-<section id="pricing" class="secondary-color text-center scrollto clearfix">
-    <div class="row clearfix">
 
-        <div class="section-heading">
-            <h3>DEINE WAHL</h3>
-            <h2 class="section-title">Exklusive Pakete für jede Gelegenheit</h2>
-        </div>
-
-        <!--Pricing Block: Hochzeit-->
-        <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="pricing-block-content">
-                <h3>Hochzeit</h3>
-                <p class="pricing-sub">Unvergessliche Momente für deinen großen Tag</p>
-                <div class="pricing">
-                    <div class="price"><span>€</span>3.500</div>
-                    <p>Ganztägige Begleitung und wunderschöne Erinnerungen</p>
-                </div>
-                <ul>
-                    <li>12 Stunden Fotografie vor Ort</li>
-                    <li>300+ bearbeitete Bilder</li>
-                    <li>Exklusive Online-Galerie</li>
-                    <li>Hochwertiges Fotobuch</li>
-                    <li>Vorgespräch zur Planung</li>
-                </ul>
-                <a href="#" class="button">TERMIN ANFRAGEN</a>
-            </div>
-        </div>
-        <!--End Pricing Block-->
-
-        <!--Pricing Block: Fotoshooting-->
-        <div class="pricing-block featured col-3 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="pricing-block-content">
-                <h3>Fotoshooting</h3>
-                <p class="pricing-sub">Perfekte Bilder für besondere Momente</p>
-                <div class="pricing">
-                    <div class="price"><span>€</span>450</div>
-                    <p>Professionelle Shootings für jede Gelegenheit</p>
-                </div>
-                <ul>
-                    <li>2 Stunden Shooting</li>
-                    <li>20 bearbeitete Bilder</li>
-                    <li>Auswahl aus 50+ Fotos</li>
-                    <li>Location deiner Wahl</li>
-                    <li>Optionale Nachbestellungen</li>
-                </ul>
-                <a href="#" class="button">JETZT BUCHEN</a>
-            </div>
-        </div>
-        <!--End Pricing Block-->
-
-        <!--Pricing Block: Tiershooting-->
-        <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="pricing-block-content">
-                <h3>Tiershooting</h3>
-                <p class="pricing-sub">Unvergessliche Bilder deiner tierischen Freunde</p>
-                <div class="pricing">
-                    <div class="price"><span>€</span>350</div>
-                    <p>Individuelle Shootings für dein Haustier</p>
-                </div>
-                <ul>
-                    <li>1 Stunde Shooting</li>
-                    <li>10 bearbeitete Bilder</li>
-                    <li>Outdoor oder Studio</li>
-                    <li>Gemeinsame Aufnahmen mit Besitzer</li>
-                    <li>Erinnerungen für die Ewigkeit</li>
-                </ul>
-                <a href="#" class="button">TERMIN ANFRAGEN</a>
-            </div>
-        </div>
-        <!--End Pricing Block-->
-
-    </div>
-</section>
-<!--End of Pricing Tables-->
 
 </main>
     <!--End Main Content Area-->
@@ -443,13 +456,8 @@
     <div class="social-icons-container">
         <ul class="social-icons">
             <li>
-                <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
-                    <i class="fab fa-facebook"></i><span class="sr-only">Facebook</span>
-                </a>
-            </li>
-            <li>
                 <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
-                    <i class="fab fa-instagram"></i><span class="sr-only">Instagram</span>
+                    <i class="fab fa-instagram"></i><span class="sr-only">Instagram</span> <!-- Größer machen -->
                 </a>
             </li>
         </ul>
@@ -462,7 +470,6 @@
         <div class="footer-section links-section">
             <h3>Nützliche Links</h3>
             <ul>
-                
                 <li><a href="/datenschutz/">Datenschutz</a></li>
                 <li><a href="/impressum/">Impressum</a></li>
             </ul>
