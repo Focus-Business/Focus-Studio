@@ -125,7 +125,9 @@
                             <li>
                                 <a href="#cats_and_dogs">Cats & Dogs</a>
                             </li>
-                            
+                            <li>
+                                <a href="#services">Services</a>
+                            </li>
                             <li>
                                 <a href="#testimonials">Testimonials</a>
                             </li>
@@ -140,39 +142,29 @@
             </div>
         </div><!--End of Header-->
 
-<!--
-    HTML-Markup (Kein <head> oder <body>)
--->
-<!-- Banner mit Text -->
-<div id="banner">
-    <div id="banner-content" class="row clearfix">
-        <div class="col-38">
-            <div class="section-heading">
-                <h1 class="text-shadow">MOMENTE FÜR DIE EWIGKEIT</h1>
-                <h2 class="text-shadow">
-                    <b>
-                        Ich bin Vu Tran, Fotograf mit dem Blick für das Besondere.
-                        Ob der Zauber eines Lächelns, die Magie eines Hochzeitstages
-                        oder die Einzigartigkeit deines Projekts – ich fange die
-                        Augenblicke ein, die wirklich zählen. Lass uns gemeinsam
-                        Erinnerungen schaffen, die ein Leben lang halten!
-                    </b>
-                </h2>
+        <!--Banner Content-->
+        <div id="banner-content" class="row clearfix">
+
+            <div class="col-38">
+        
+                <div class="section-heading">
+                    <h1 class="text-shadow">MOMENTE FÜR DIE EWIGKEIT</h1>
+                    <h2 class="text-shadow"> <b>Ich bin Vu Tran, Fotograf mit dem Blick für das Besondere. Ob der Zauber eines Lächelns, die Magie eines Hochzeitstages oder die Einzigartigkeit deines Projekts – ich fange die Augenblicke ein, die wirklich zählen. Lass uns gemeinsam Erinnerungen schaffen, die ein Leben lang halten! </b></h2>
+                </div>
+            
+                <!--Call to Action-->
+                <a href="#kontakt" class="button">MOMENTE FESTHALTEN</a>
+                <!--End Call to Action-->
+            
             </div>
-            <!-- Call to Action -->
-            <a href="#kontakt" class="button">MOMENTE FESTHALTEN</a>
-            <!-- End Call to Action -->
-        </div>
-    </div>
-</div>
-<!-- Ende des Banners -->
+            
+            
+            <img src="../images/banner-images/IMG_1639.JPG" id="banner-logo" alt="Landing Page"/>
+        </div><!--End of Row-->
+        
 
-<!-- Bildbereich für mobile Ansicht -->
-<div id="mobile-banner-image"></div>
-<!-- Ende des Bildbereichs -->
-
-<style>
-/* Banner Background and Text Colors */
+        <style>
+            /* Banner Background and Text Colors */
 /* Standard-Stile für #banner */
 #banner {
     position: relative;
@@ -181,39 +173,25 @@
     height: 700px; /* Beispielhöhe */
 }
 
-/* Verstecke das mobile Banner-Element standardmäßig (auf Desktop) */
-#mobile-banner-image {
-    display: none;
-}
-
 /* Medienabfrage für Bildschirme mit einer maximalen Breite von 768px */
 @media (max-width: 768px) {
-    /* Entfern das Hintergrundbild und passe die Höhe an */
+    /* 
+       Anstatt das Bild verkleinert als Hintergrund anzuzeigen,
+       entfernen wir den Hintergrund und fügen es als eigenes Element 
+       (Pseudo-Element) unterhalb des Textes ein.
+    */
     #banner {
         background: none;
-        height: auto;
+        height: auto; /* Höhe automatisch anpassen */
     }
 
-    /* Zeige nun das mobile Bannerbild */
-    #mobile-banner-image {
-        display: block;
-        width: 100%;
-        height: 400px; /* Passe die Höhe nach Bedarf an */
-        margin-top: 20px; /* Kleiner Abstand zum Inhalt (falls gewünscht) */
-        background: url("../images/banner-images/IMG_1639.jpg") no-repeat center top;
-        background-size: cover;
-    }
+
 }
 
 /* -------------------------
    Banner Content
    ------------------------- */
 
-#banner-content {
-    /* Falls du möchtest, dass der Inhalt oben bleibt und nicht
-       von anderer Höhe beeinflusst wird, 
-       kannst du hier bei Bedarf weitere Styles hinzufügen. */
-}
 
 .row.clearfix::after {
     content: "";
@@ -222,9 +200,10 @@
 }
 
 .col-38 {
+    /* Beispiel-Layout: Die Breite oder andere Einstellungen kannst du hier anpassen */
     width: 100%;
-    max-width: 600px; /* Beispielwert */
-    margin: 0 auto;   /* Zentriert */
+    max-width: 600px; /* Nur ein Beispielwert */
+    margin: 0 auto;   /* Zentriert falls gewünscht */
 }
 
 /* Überschriften und Text im Banner */
@@ -246,11 +225,22 @@
         0 0 14px rgba(255, 255, 255, 0.3);
 }
 
+/* Beispiel-Button-Stil */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333; 
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
 .button:hover {
     background-color: #555;
 }
-</style>
 
+        </style>
         
     </header>
 
@@ -409,6 +399,35 @@
         
 
 
+<!--Content Section-->
+<div id="services" class="scrollto clearfix">
+
+    <div class="row no-padding-bottom clearfix">
+
+
+        <!--Content of the Right Side-->
+        <div class="col-2">
+            <div class="section-heading">
+                <h3>FOTOGRAFIE</h3>
+                <h2 class="section-title">Fokus Auf Das, Was Wirklich Zählt</h2>
+                <p class="section-subtitle">Ich halte deine besonderen Augenblicke fest – authentisch, kreativ und mit einem Blick fürs Detail. Jeder Moment erzählt eine Geschichte.</p>
+            </div>
+            <p>Ob es ein einmaliger Moment wie eine Hochzeit ist, ein Porträt, das deine Persönlichkeit zeigt, oder Bilder, die dein Unternehmen repräsentieren – ich sorge dafür, dass jedes Bild einzigartig wird.</p>
+            <p>
+                Meine Leidenschaft ist es, Emotionen und Geschichten durch Bilder lebendig zu machen. Lass uns gemeinsam
+                deine schönsten Momente in unvergesslichen Fotografien verewigen.
+            </p>
+        </div>
+        <!--End Content Right Side-->
+
+        <div style="text-align: center;">
+            <img src="images/dancer.jpg" alt="Fotograf bei der Arbeit" style="height: 600px; width: auto;"/>
+        </div>
+        
+
+    </div>
+
+</div>
 <!--End of Content Section-->
 
 
